@@ -26,7 +26,7 @@ Kamu bisa melihat demo website pada link berikut: [Demo Website](https://andikat
 #### **Langkah 1:** Clone Repository ke Komputer Lokal
 
 ```bash
-git clone https://github.com/andikatuluspangestu/bumbu-umik-web.git
+git clone git@github.com:anharsaja/bumbu-umik-web.git
 ```
 
 #### **Langkah 2:** Buka folder Projects
