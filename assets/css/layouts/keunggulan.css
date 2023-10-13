@@ -1,0 +1,63 @@
+@import "https://fonts.googleapis.com/css2?family=Croissant+One&display=swap";
+@import "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Caveat&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 16px;
+  font-weight: weight(regular);
+  color: #44465F;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: solid 2px #E1A56B;
+  font-size: 14px;
+  font-weight: 400;
+  color: #44465F;
+  transition: all 0.3s ease-in-out;
+  resize: none;
+}
+textarea:focus {
+  border: solid 2px #E1A56B;
+}
+
+[data-aos] {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  will-change: transform;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#keunggulan .card {
+  background-color: base/#ffffff;
+  border: none;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+#keunggulan .card img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#keunggulan .card img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+#keunggulan .card .card-body {
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=keunggulan.css.map */
