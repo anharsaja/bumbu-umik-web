@@ -1,0 +1,93 @@
+@import "https://fonts.googleapis.com/css2?family=Croissant+One&display=swap";
+@import "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Caveat&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 16px;
+  font-weight: weight(regular);
+  color: #44465F;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: solid 2px #E1A56B;
+  font-size: 14px;
+  font-weight: 400;
+  color: #44465F;
+  transition: all 0.3s ease-in-out;
+  resize: none;
+}
+textarea:focus {
+  border: solid 2px #E1A56B;
+}
+
+[data-aos] {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  will-change: transform;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.accordion-item:nth-child(1) h2.accordion-header button.accordion-button {
+  background-color: #dd9856;
+  color: #fff;
+}
+.accordion-item:nth-child(1) h2.accordion-header button.accordion-button::after {
+  color: #dd9856;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-item:nth-child(2) h2.accordion-header button.accordion-button {
+  background-color: #d88b41;
+  color: #fff;
+}
+.accordion-item:nth-child(2) h2.accordion-header button.accordion-button::after {
+  color: #d88b41;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-item:nth-child(3) h2.accordion-header button.accordion-button {
+  background-color: #d47e2b;
+  color: #fff;
+}
+.accordion-item:nth-child(3) h2.accordion-header button.accordion-button::after {
+  color: #d47e2b;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-item:nth-child(4) h2.accordion-header button.accordion-button {
+  background-color: #bf7227;
+  color: #fff;
+}
+.accordion-item:nth-child(4) h2.accordion-header button.accordion-button::after {
+  color: #bf7227;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-item:nth-child(5) h2.accordion-header button.accordion-button {
+  background-color: #aa6522;
+  color: #fff;
+}
+.accordion-item:nth-child(5) h2.accordion-header button.accordion-button::after {
+  color: #aa6522;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+@media (max-width: 767px) {
+  .accordion-section {
+    margin-top: 20px;
+  }
+  .accordion-section .accordion-section-title {
+    font-size: 1.5rem;
+    text-align: left !important;
+  }
+}
+
+/*# sourceMappingURL=faq.css.map */
