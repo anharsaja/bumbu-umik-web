@@ -1,0 +1,29 @@
+// Import base variables
+@import "../base/reset";
+@import "../base/colors";
+@import "../base/typography";
+
+// Hero Banner
+.hero {
+  background-image: url('../../../assets/img/others/bg-desktop.jpg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 90px;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    background-image: url("../../../assets/img/others/bg-smartphone.jpg") !important;
+    height: 800px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    background-image: url("../../../assets/img/others/bg-desktop.jpg");
+    margin-top: 40px;
+  }
+}
