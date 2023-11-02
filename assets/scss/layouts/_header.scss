@@ -1,0 +1,100 @@
+// main.scss
+@use '../base/reset';
+@use '../base/colors';
+@use '../base/typography';
+
+// Navbar
+.navbar {
+  background-color: colors.$color-primary;
+  padding: 10px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo-brand {
+  width: 100px;
+}
+
+.nav-link {
+  color: colors.$color-white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+
+  .active {
+    color: colors.$color-secondary !important;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: colors.$color-secondary;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none !important;
+}
+
+.search-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 55px;
+  margin: 5px 0;
+
+  &:focus {
+    box-shadow: none;
+    border: none;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ccc;
+  }
+}
+
+.fixed-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+@media (max-width: 575.98px) {
+  .navbar .navbar-collapse {
+    background-color: colors.$color-white;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar .navbar-collapse ul li {
+    margin-top: 10px;
+  }
+
+  .navbar .navbar-collapse ul li a {
+    color: colors.$color-secondary !important;
+    padding-left: 20px;
+  }
+
+  .navbar .navbar-collapse ul li a:hover {
+    border-left: colors.$color-secondary solid 5px;
+    background-color: rgba(255, 248, 241, 0.37);
+  }
+
+  .search-input {
+    margin: 0 10px 10px 10px;
+    border-radius: 10px;
+  }
+
+  .search-input:focus {
+    box-shadow: none;
+    border: none;
+  }
+
+  .search-input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: colors.$color-tertiary;
+  }
+}
