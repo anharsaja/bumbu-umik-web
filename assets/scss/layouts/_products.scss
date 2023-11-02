@@ -1,0 +1,102 @@
+// Import base variables
+@import "../base/reset";
+@import "../base/colors";
+@import "../base/typography";
+
+// Products
+#products {
+  background-color: #44465f;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-start {
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: $color-white;
+    font-family: $font-secondary;
+  }
+
+  // Card
+  .card {
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    img:hover{
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-detail-product {
+      margin-top: 10px;
+      @include button-style($color-primary);   
+    }
+    // Endcard
+  }
+
+  .modal {
+    .modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    .modal-content {
+      border-radius: 10px;
+      background-color: $color-white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      color: $color-secondary;
+      font-size: font-size("small");
+    }
+
+    .modal-body {
+      padding: 20px;
+      text-align: center;
+    }
+
+ // coba Extend
+    .img-fluid {
+      @extend img;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+
+    .product-detail {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    .modal-footer button {
+      @include button-style($color-primary);
+    }
+  }
+
+  .product-resep table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    color: $color-secondary !important;
+  }
+}
