@@ -1,0 +1,141 @@
+// Import base variables
+@import "../base/reset";
+@import "../base/colors";
+@import "../base/typography";
+
+#kritiksaran {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $color-white;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: $color-primary;
+    font-family: $font-secondary;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-secondary;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 10px;
+    border: solid 2px $color-white;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $color-white;
+      border: solid 2px $color-primary;
+      color: $color-primary;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      font-size: 18px;
+      font-weight: 400;
+      color: $color-secondary;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 10px;
+      border-radius: 10px;
+      border: solid 2px $color-secondary;
+      font-size: 14px;
+      font-weight: 400;
+      color: $color-secondary;
+      transition: all 0.3s ease-in-out;
+
+      &:focus {
+        border: solid 2px $color-primary;
+      }
+    }
+  }
+}
+
+// Whatsapp Floating Button
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp-btn {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 60px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.whatsapp-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.whatsapp-btn:hover {
+  background: #128c7e;
+}
+
+#whatsappModal .modal-body {
+
+  textarea {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: solid 2px #25d366;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-secondary;
+    transition: all 0.3s ease-in-out;
+    resize: none;
+
+    &:focus {
+      border: solid 2px #25d366;
+    }
+  }
+
+  button {
+    background-color: #25d366;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 2px #25d366;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-white;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #128c7e;
+      border: solid 2px #128c7e;
+      color: &color-white;
+    }
+
+    &:focus {
+      border: solid 2px #25d366;
+    }
+  }
+}
