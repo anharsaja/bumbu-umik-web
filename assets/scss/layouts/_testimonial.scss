@@ -1,0 +1,196 @@
+// Gunakan base variables
+@import "../base/reset";
+@import "../base/colors";
+@import "../base/typography";
+
+#testimonial {
+  padding: 100px;
+  background-color: $color-secondary;
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    border: none;
+    outline: none !important;
+    margin-top: 120px !important;
+  }
+
+  @for $i from 1 through 2 {
+    .carousel-item:nth-child(#{$i}) .testimonial-item {
+      text-align: center;
+      margin-bottom: 4rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      border-radius: 10px;
+      background-color: $color-tertiary;
+
+      img {
+        width: 100px;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+        color: $color-primary;
+      }
+
+      .rating {
+        font-size: 24px;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 1rem;
+        color: $color-white;
+      }
+    }
+  }
+
+  .testimonial-title {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h3 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: $color-primary;
+      font-family: $font-secondary;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: $color-white;
+      margin-bottom: 20px;
+    }
+  }
+
+  .testimonial-button {
+    @include button-style($color-primary);
+
+    &:hover {
+      background-color: $color-secondary;
+      border: solid 2px $color-primary;
+      color: $color-white;
+    }
+  }
+}
+
+// Ulasan Lainnya
+.ulasan {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+
+    .card-body {
+      padding: 20px;
+
+      .avatar-image {
+        width: 100%;
+        max-width: 60px;
+        border-radius: 50%;
+      }
+
+      .text-secondary {
+        font-size: 0.9rem;
+      }
+
+      .float-right {
+        float: right;
+      }
+
+      .fa-star,
+      .fa-star-half {
+        color: #ffc107 !important;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #E1A56B;
+    font-family: "Croissant One", cursive;
+  }
+
+  .pagination {
+    justify-content: center;
+
+    .page-item {
+      &.active {
+        .page-link {
+          background-color: #E1A56B;
+          border-color: #E1A56B;
+          color: #fff;
+        }
+      }
+
+      &.disabled {
+        .page-link {
+          color: #44465F;
+          pointer-events: none;
+          cursor: auto;
+          background-color: #fff;
+          border-color: #fff;
+
+          &:hover {
+            background-color: #af9898;
+            border-color: #af9898;
+          }
+
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+
+      .page-link {
+        color: #44465F;
+
+        &:hover {
+          background-color: #E1A56B;
+          border-color: #E1A56B;
+          color: #44465F;
+        }
+      }
+    }
+  }
+
+  &-modal-button {
+    @include button-style($color-primary);
+
+    &:hover {
+      background-color: $color-white;
+      border: solid 2px $color-primary;
+      color: $color-primary;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-2 {
+    text-align: center;
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
+}
