@@ -1,0 +1,77 @@
+// Gunakan base variables
+@import "../base/reset";
+@import "../base/colors";
+@import "../base/typography";
+
+#subcribe {
+  margin-bottom: 80px;
+  background-color: $color-white;
+  padding-right: 100px;
+  padding-left: 100px;
+
+  .subcribe-card {
+    background-color: $color-secondary;
+    border-radius: 15px;
+    padding: 70px 80px 30px 80px;
+
+    .subcribe-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 7px;
+      color: $color-white;
+      font-family: $font-secondary;
+    }
+
+    .subcribe-subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      color: $color-white;
+      font-family: $font-primary;
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      input {
+        width: 50%;
+        height: 50px;
+        border-radius: 10px;
+        border: solid 2px $color-primary;
+        padding-left: 20px;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-white !important;
+        background-color: $color-secondary;
+
+        &::placeholder {
+          color: $color-white;
+        }
+
+        &:focus {
+          outline: none;
+          color: $color-white;
+        }
+
+      }
+
+      button {
+        @include button-style($color-primary);
+        background-color: $color-primary;
+        border: solid 2px $color-primary;
+        color: $color-white;
+
+        &:hover {
+          background-color: $color-secondary;
+          border: solid 2px $color-primary;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
