@@ -1,0 +1,38 @@
+// Use base variables
+@use "../base/reset";
+@use "../base/colors";
+@use "../base/typography";
+
+#keunggulan {
+  @function maxWidth($firstWidth,$secondWidth){
+    @return $firstWidth + $secondWidth;
+  }
+
+  .card {
+    background-color: base/colors.$color-white;
+    border: none;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      max-width: maxWidth(30%,20% );
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card-body {
+      padding: 0 20px 20px 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
