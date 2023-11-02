@@ -1,0 +1,38 @@
+// Import base variables
+@import "../base/reset";
+@import "../base/colors";
+@import "../base/typography";
+
+//About
+#about {
+  background-color: $color-white;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  img {
+    width: 60%;
+  }
+
+  h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: $color-primary;
+    font-family: $font-secondary;
+  }
+
+  #about-title {
+    opacity: 1;
+      animation: blink 0.7s infinite;
+  }
+
+  p {
+    font-weight: 400;
+    color: $color-secondary;
+    margin-bottom: 20px;
+    font-size: font-size("large");
+  }
+}
