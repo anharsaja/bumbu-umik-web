@@ -1,0 +1,44 @@
+// Import base variables
+@import "../base/reset";
+@import "../base/colors";
+@import "../base/typography";
+
+#call-to-action {
+  background-color: $color-white;
+  padding: 100px 100px 50px 100px;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: $color-primary;
+    font-family: $font-secondary;
+
+    strong {
+      color: $color-secondary;
+    }
+
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-secondary;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    @include button-style($color-primary);
+
+    &:hover {
+      background-color: $color-white;
+      border: solid 2px $color-primary;
+      color: $color-primary;
+    }
+  }
+}
