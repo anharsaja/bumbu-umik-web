@@ -1,0 +1,75 @@
+@import "https://fonts.googleapis.com/css2?family=Croissant+One&display=swap";
+@import "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Caveat&display=swap";
+
+@import "typography";
+@import "colors";
+
+// Reset CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: weight(regular);
+  color: $color-secondary;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: solid 2px $color-primary;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-secondary;
+  transition: all 0.3s ease-in-out;
+  resize: none;
+
+  &:focus {
+    border: solid 2px $color-primary;
+  }
+}
+
+// Mixin Button Style
+@mixin button-style($btn-color: #e1a56b) {
+  background-color: $btn-color;
+  border: 2px solid $btn-color;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: button-size("small");
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $btn-color;
+    border: 2px solid $btn-color;
+  }
+}
+
+// AOS Smooth 
+[data-aos] {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  will-change: transform;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+// Function ukuran button
+@function button-size($size) {
+  @if $size == "small" {
+    @return 10px;
+  } @else if $size == "medium" {
+    @return 20px;
+  } @else if $size == "large" {
+    @return 30px;
+  } @else {
+    @return 0;
+  }
+}
