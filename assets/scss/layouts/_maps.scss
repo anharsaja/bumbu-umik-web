@@ -1,0 +1,20 @@
+// Import base variables
+@import "../base/reset";
+@import "../base/colors";
+@import "../base/typography";
+
+#maps {
+  .maps-title{
+    font-size: 36px;
+    font-weight: bold;
+    color: $color-primary;
+    margin-bottom: 20px;
+    font-family: $font-secondary;
+  }
+
+  .maps-subtitle{
+    font-size: 18px;
+    color: $color-secondary;
+    margin-bottom: 20px;
+  }
+}
